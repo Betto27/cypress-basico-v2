@@ -1,12 +1,11 @@
 name: End-to-end tests
-
-on: 
-  push:  # Monitora push em todas as branches
-  pull_request:  # Monitora pull requests
+run-name: Correcao-cypress-basico-v2
+on: [push]
+ 
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-2.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
